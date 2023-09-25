@@ -141,10 +141,10 @@ export default function App() {
         </label>
       </div>
       <ul>
-        {/* <LaunchesList launches={launchesFilteredByDate}/> */}
-        {launchesFilteredByDate.map((launch) => (
+        <LaunchesList launches={launchesFilteredByDate}/>
+        {/* {launchesFilteredByDate.map((launch) => (
           <li key={launch.id}>{launch.name}</li>
-        ))}
+        ))} */}
       </ul>
       <button onClick={handleLoadMore}>Load more</button>
     </>
